@@ -5,6 +5,8 @@ A collection of nodes designed to enhance your workflow with realistic filename 
 
 A text generation node that parses specific tags and replaces them with random values from curated lists. It is useful for building dynamic, varied prompts.
 
+<img width="333" height="394" alt="p" src="https://github.com/user-attachments/assets/cd2d3700-fc32-44a0-ab40-e5b23b44914a" />
+
 ### Usage
 Simply include tags in your prompt text. 
 *   **Text Replacement**: `<tag>` is replaced by a random line from the corresponding CSV.
@@ -26,6 +28,8 @@ Simply include tags in your prompt text.
 ## Filename Generator 📁
 
 Generates realistic filenames and folder paths for 30+ different devices and platforms. These strings can be used as prompts to induce specific aesthetic effects (e.g., adding `DSC_0123.JPG` to a prompt).
+
+<img width="338" height="221" alt="f" src="https://github.com/user-attachments/assets/f8ebe325-2fbd-4497-ae58-b744db599c33" />
 
 ### Parameters
 1.  **Prompt**: Text to incorporate into the file path (spaces converted to underscores).
