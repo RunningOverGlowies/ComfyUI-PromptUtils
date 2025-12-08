@@ -1,11 +1,11 @@
 [project]
 name = "comfyui-promptutils"
-description = "A set of ComfyUI nodes designed to enhance your workflow with realistic filename generation and keyword generation."
-version = "1.0.0"
+description = "A set of ComfyUI nodes designed to enhance your workflow with realistic filename generation and prompt generation."
+version = "2.0.0"
 license = {file = "LICENSE"}
 
 [project.urls]
-Repository = "https://github.com/Black-Lioness/ComfyUI-PromptUtils"
+Repository = "https://github.com/RunningOverGlowies/ComfyUI-PromptUtils"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
