@@ -1,7 +1,6 @@
 # ComfyUI Prompt & Filename Tools
 
-A collection of nodes designed to enhance your workflow with realistic filename generation, randomized wildcards, and keywords.
-
+A collection of nodes designed to enhance your workflow with realistic filename generation and randomized wildcards
 ## Prompt Wildcards ✨
 
 A text generation node that parses specific tags and replaces them with random values from curated lists. It is useful for building dynamic, varied prompts.
