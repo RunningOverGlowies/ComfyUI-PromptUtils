@@ -48,8 +48,3 @@ Generates realistic filenames and folder paths for 30+ different devices and pla
 *   **Input**: `Prompt: "France", Format: 🌡️ Thermal`
     *   **Output**: `InfraredImage_20240117.jpg`
 
----
-
-## Keyword Generator 🔑
-
-*Documentation coming soon.*
