@@ -17,10 +17,10 @@ Simply include tags in your prompt text.
 | Category | Tags |
 | :--- | :--- |
 | **Character** | `<nlt>` (Nationality), `<species>`, `<out>` (Outfit), `<outn>` (NSFW Outfit), `<makeup>`, `<exp>` (Expression), `<pose>` |
-| **World** | `<loc>` (Location), `<locw>` (Weird Location), `<time>`, `<light>` |
-| **Style/Art** | `<style>`, `<medi>` (Medium), `<color>`, `<color2>` |
+| **World** | `<loc>` (Location), `<locw>` (Weird Location), `<time>`, `<light>` (Lighting) |
+| **Style/Art** | `<style>` (Assorted styles), `<medi>` (Medium), `<color>` (Colors), `<color2>` (Alt-colors) |
 | **Pop Culture** | `<celeb>`, `<film>`, `<game>`, `<media>` |
-| **Misc** | `<word>`, `<wordp>` (Power word), `<wordn>`, `<pass>`, `<wordk>` |
+| **Misc** | `<wordk>` (Photo keyword), `<word>` (Random word), `<wordp>` (Power word), `<wordn>` (NSFW word), `<pass>` (random password) |
 
 ---
 
