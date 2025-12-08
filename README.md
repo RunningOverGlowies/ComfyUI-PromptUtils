@@ -1,76 +1,55 @@
-Two ComfyUI nodes designed to enhance your workflow with realistic filename generation and prompt generation.
+# ComfyUI Prompt & Filename Tools
+
+A collection of nodes designed to enhance your workflow with realistic filename generation, randomized wildcards, and keywords.
+
+## Prompt Wildcards ✨
+
+A text generation node that parses specific tags and replaces them with random values from curated lists. It is useful for building dynamic, varied prompts.
+
+### Usage
+Simply include tags in your prompt text. 
+*   **Text Replacement**: `<tag>` is replaced by a random line from the corresponding CSV.
+*   **Date Logic**: 
+    *   Ranges: `<1980-1990>` picks a random year between the two.
+    *   Patterns: `<19xx>`, `<2xxx>`, `<xxxx>` generates random years matching the pattern.
+
+### Supported Tags
+| Category | Tags |
+| :--- | :--- |
+| **Character** | `<nlt>` (Nationality), `<species>`, `<out>` (Outfit), `<outn>` (NSFW Outfit), `<makeup>`, `<exp>` (Expression), `<pose>` |
+| **World** | `<loc>` (Location), `<locw>` (Weird Location), `<time>`, `<light>` |
+| **Style/Art** | `<style>`, `<medi>` (Medium), `<color>`, `<color2>` |
+| **Pop Culture** | `<celeb>`, `<film>`, `<game>`, `<media>` |
+| **Misc** | `<word>`, `<wordp>` (Power word), `<wordn>`, `<pass>`, `<wordk>` |
+
+---
 
 ## Filename Generator 📁
 
-- Generates somewhat realistic filenames for 30+ different devices and platforms
-- Creates authentic file paths in both simple and complex formats
-- Supports multiple image and video formats (JPG, CR3, ARW, HEIC, MP4, etc.)
-- Customizable through prompt text and random seed
-- Includes specialized formats for scientific and professional imaging
+Generates realistic filenames and folder paths for 30+ different devices and platforms. These strings can be used as prompts to induce specific aesthetic effects (e.g., adding `DSC_0123.JPG` to a prompt).
 
-Filenames as prompts are not a magic bullet, but they can produce sometimes produce interesting effects with certain models (add `DSC_0123.JPG` to any prompt and try yourself).
+### Parameters
+1.  **Prompt**: Text to incorporate into the file path (spaces converted to underscores).
+2.  **Format**:
+    *   📷 **Cameras**: Nikon, Canon, Sony, Fujifilm, etc.
+    *   📱 **Mobile**: iPhone (HEIC/JPEG), Android, Pixel, Samsung.
+    *   🎥 **Video/Social**: TikTok, Instagram, Snapchat, GoPro, CCTV, Dashcam.
+    *   🔬 **Specialty**: Thermal, Macro, Underwater, Astro, 3D Scan.
+3.  **Path**: 
+    *   `Disabled`: Filename only.
+    *   `Simple`: Basic folder structure.
+    *   `Complex`: Realistic, deep system paths (e.g., Windows/User directories).
 
-### Input Parameters
-
-1. **Prompt**: (Optional) Text that will be incorporated into the file path
-   - Spaces will be converted to underscores
-   - Used to create topic-specific folders
-
-2. **Extra Prompt**: (Optional) Additional text to be used in filename or path generation
-   - Can be combined with the main prompt, useful for adding more context or metadata
-
-3. **Format**: Choose from these categories:
-   - 🎲 Random (randomly selects a format)
-   - 📷 Camera Brands: Nikon, Canon, Fujifilm, Sony, Panasonic, Casio, Generic
-   - 📱 Mobile Devices: Android, iPhone (HEIC/JPEG), Pixel, Samsung
-   - 🖥️ Screenshots: Windows, macOS
-   - 🎥 Video/Social: VLC, WhatsApp, Instagram, Facebook, Snapchat, TikTok
-   - 🚁 Drones: DJI, Mavic
-   - 📹 Action/Security: GoPro, Dashcam, Security Camera, CCTV
-   - 🤿 Specialty: Underwater, Aerial, 360-Degree
-   - 🔬 Scientific: Macro, Thermal Imaging
-   - 🌌 Advanced Imaging: Astro Photography, Satellite Imagery
-   - 🖼️ Special: 3D Scan
-   - ❓ Misc: Various other 'formats' 
-
-4. **Path**: Choose between:
-   - Disabled: No path
-   - Simple: Basic directory structures
-   - Complex: More detailed folder hierarchies including common user directories
-
-5. **Seed**: (Optional)
-
-#### Outputs
-
-1. **Filename Only**: Just the generated filename (e.g., `IMG_0123.CR3`)
-2. **Filename With Path**: Complete file path (e.g., `C:\Users\Photos\IMG_0123.CR3`)
-
-#### Examples
-```
-Prompt: Big fat Steve Mt Everest trip
-Format: 📷 Nikon
-Path: Simple
-```
-Possible output:
-- Filename Only: `DSC_0123.JPG`
-- Filename With Path: `C:\Big_fat_Steve_Mt_Everest_trip\DSC_0123.JPG`
-
-```
-Prompt: Crazy New Years Eve drunk party 1999
-Format: 📸 Instagram
-Path: Complex
-```
-Possible output:
-- Filename Only: `insta4567.jpg`
-- Filename With Path: `D:\Users\Pictures\Crazy_New_Years_Eve_drunk_party_1999\insta4567.jpg`
-
-```
-Prompt: Beautiful France Provence countryside
-Format: 🌡️ Thermal Imaging
-Path: Complex
-```
-Possible output:
-- Filename Only: `InfraredImage_45678_20240117_143022.jpg`
-- Filename With Path: `E:\Projects\Beautiful_France_Provence_countryside\InfraredImage_45678_20240117_143022.jpg`
+### Examples
+*   **Input**: `Format: 📷 Nikon`
+    *   **Output**: `DSC_0123.JPG`
+*   **Input**: `Prompt: "Party", Format: 📸 Instagram, Path: Complex`
+    *   **Output**: `D:\Users\Pictures\Party\insta4567.jpg`
+*   **Input**: `Prompt: "France", Format: 🌡️ Thermal`
+    *   **Output**: `InfraredImage_20240117.jpg`
 
 ---
+
+## Keyword Generator 🔑
+
+*Documentation coming soon.*
