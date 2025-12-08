@@ -1,4 +1,3 @@
-#https://github.com/Black-Lioness/ComfyUI-PromptUtils
 import random
 import os
 import json
