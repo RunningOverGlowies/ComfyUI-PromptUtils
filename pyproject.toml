@@ -1,6 +1,6 @@
 [project]
 name = "comfyui-promptutils"
-description = "A set of ComfyUI nodes designed to enhance your workflow with realistic filename generation and prompt generation."
+description = "A collection of nodes designed to enhance your workflow with realistic filename generation and randomized wildcards"
 version = "2.0.0"
 license = {file = "LICENSE"}
 
