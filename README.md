@@ -1,3 +1,12 @@
+### New April 2026
+**Wildcards added**: 
+*  `<artist>` (Danbooru artist, 20k)
+*  `<paintstyle>` (Painting style)
+*  `<painter>` (Painter with style)
+*  `<style2>` (More styles)
+*  `<light2>` (More lighting)
+
+
 # ComfyUI Prompt & Filename Tools
 
 A collection of nodes designed to enhance your workflow with realistic filename generation and randomized wildcards
@@ -18,8 +27,8 @@ Simply include tags in your prompt text.
 | Category | Tags |
 | :--- | :--- |
 | **Character** | `<nlt>` (Nationality), `<species>`, `<out>` (Outfit), `<outn>` (NSFW Outfit), `<makeup>`, `<exp>` (Expression), `<pose>` |
-| **World** | `<loc>` (Location), `<locw>` (Weird Location), `<time>`, `<light>` (Lighting) |
-| **Style/Art** | `<style>` (Assorted styles), `<medi>` (Medium), `<color>` (Colors), `<color2>` (Alt-colors) |
+| **World** | `<loc>` (Location), `<locw>` (Weird Location), `<time>`, `<light>` (Lighting), `<light2>` (More lighting) |
+| **Style/Art** | `<style>` (Assorted styles), `<style2>` (More styles), `<medi>` (Medium), `<color>` (Colors), `<color2>` (Alt-colors),  `<artist>` (Danbooru artist, 20k), `<paintstyle>` (Painting style), `<painter>` (Painter with style) |
 | **Pop Culture** | `<celeb>`, `<film>`, `<game>`, `<media>` |
 | **Misc** | `<wordk>` (Photo keyword), `<word>` (Random word), `<wordp>` (Power word), `<wordn>` (NSFW word), `<pass>` (random password) |
 
